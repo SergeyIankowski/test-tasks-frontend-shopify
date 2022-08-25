@@ -12,30 +12,38 @@
 
 <body>
     <main class="main">
-        <h1 class="h1 title">Товары недели</h1>
-        <div class="products-container">
-            <div class="product products-container__item">
-                <div class="product__tags">
-                    <span class="product__tag product__tag_new"></span>
-                    <span class="product__tag product__tag_last"></span>
+        <div class="products-of-the-week">
+            <h2 class="products-of-the-week__title">Товары недели</h2>
+            <div class="products-cards-container">
+                <div class="product-card products-cards-container__item">
+                    <div class="product-card__tags">
+                        <span class="product-card__tag product-card__tag_new">НОВИНКА</span>
+                        <span class="product-card__tag product-card__tag_last">ПОСЛЕДНИЙ</span>
+                    </div>
+                    <img src="orange.jpg" alt="sliced orange" class="product-card__img">
+                    <h3 class="product-card__title">Апельсиновый сок</h3>
+                    <p class="product-card__description">Он придётся по душе, даже если ты слива лиловая, спелая,
+                        садовая.
+                    </p>
+                    <button class="button product-card__button">В корзину</button>
                 </div>
-                <img src="orange.jpg" alt="sliced orange" class="product__img">
-                <h3 class="product__title">Апельсиновый сок</h3>
-                <p class="product__description">Он придётся по душе, даже если ты слива лиловая, спелая, садовая.</p>
-                <button class="button product__button">В корзину</button>
-            </div>
-            <div class="product products-container__item">
-                <img src="orange.jpg" alt="sliced orange" class="product__img">
-                <h3 class="product__title">Апельсиновый сок</h3>
-                <p class="product__description">Он придётся по душе, даже если ты слива лиловая, спелая, садовая. Ну что
-                    сказать? Ну что сказать? Устроены так длинные описания.</p>
-                <button class="button product__button">В корзину</button>
-            </div>
-            <div class="product products-container__item">
-                <img src="orange.jpg" alt="sliced orange" class="product__img">
-                <h3 class="product__title">Апельсиновый сок</h3>
-                <p class="product__description">Он придётся по душе, даже если ты слива лиловая, спелая, садовая.</p>
-                <button class="button product__button product__button_disabled">Закончилось</button>
+                <div class="product-card products-cards-container__item">
+                    <img src="orange.jpg" alt="sliced orange" class="product-card__img">
+                    <h3 class="product-card__title">Апельсиновый сок</h3>
+                    <p class="product-card__description">Он придётся по душе, даже если ты слива лиловая, спелая,
+                        садовая. Ну
+                        что
+                        сказать? Ну что сказать? Устроены так длинные описания.</p>
+                    <button class="button product-card__button">В корзину</button>
+                </div>
+                <div class="product-card products-cards-container__item">
+                    <img src="orange.jpg" alt="sliced orange" class="product-card__img">
+                    <h3 class="product-card__title">Апельсиновый сок</h3>
+                    <p class="product-card__description">Он придётся по душе, даже если ты слива лиловая, спелая,
+                        садовая.
+                    </p>
+                    <button disabled class="button product-card__button button">Закончилось</button>
+                </div>
             </div>
         </div>
     </main>
