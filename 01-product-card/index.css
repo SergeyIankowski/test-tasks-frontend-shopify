@@ -132,9 +132,13 @@
   .products-cards-container {
     width: 100%;
   }
+
+  .products-of-the-week__title {
+    font: normal 900 42px/63px 'Arial';
+  }
 }
 
-@media (max-width: 379px) {
+@media (max-width: 399px) {
   .products-of-the-week__title {
     font: normal 900 30px/60px 'Arial';
   }
