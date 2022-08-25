@@ -1,1 +1,163 @@
-/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+:root {
+  --tag-color-new: #FDCFF3;
+  --tag-color-last: #FFCF56;
+  --card-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+  --card-bg-color: #ffffff;
+  --button-text-color: #42940F;
+  --button-text-color-hover: #ffffff;
+  --button-text-color-active: #ffffff;
+  --button-text-color-disabled: #ffffff;
+  --button-bg-color: rgba(255, 255, 255, 0);
+  --button-bg-color-hover: #42940F;
+  --button-bg-color-active: #1F5200;
+  --button-bg-color-disabled: #4E4E4E;
+  --button-border-color: #42940F;
+  --button-border-color-hover: #42940F;
+  --button-border-color-active: #1F5200;
+  --button-border-color-disabled: #4E4E4E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.products-of-the-week {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.products-of-the-week__title {
+  font: normal 900 48px/72px 'Arial';
+}
+
+.products-cards-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.products-cards-container__item {
+  width: 380px;
+  height: 482px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+
+.product-card {
+  position: relative;
+
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--card-bg-color);
+
+}
+
+.product-card__tags {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  z-index: 10;
+  display: flex;
+  gap: 16px;
+}
+
+.product-card__tag {
+  font: normal 400 16px/24px 'Arial';
+  padding: 0 16px;
+  border-radius: 8px;
+}
+
+.product-card__tag_new {
+  background-color: var(--tag-color-new);
+}
+
+.product-card__tag_last {
+  background-color: var(--tag-color-last);
+}
+
+.product-card__title {
+  font: normal 900 24px/36px 'Arial';
+  padding: 0 24px;
+}
+
+.product-card__description {
+  font: normal 400 16px/24px "Arial";
+  padding: 0 24px;
+  align-self: start;
+}
+
+/* button styles */
+
+.button {
+  font: normal 900 18px/25px 'Arial';
+}
+
+.product-card__button {
+  border: 2px solid var(--button-border-color);
+  color: var(--button-text-color);
+  border-radius: 8px;
+  background-color: var(--button-bg-color);
+
+  margin: 0 24px;
+  padding: 10.5px;
+}
+
+.product-card__button:hover {
+  background-color: var(--button-bg-color-hover);
+  color: var(--button-text-color-hover);
+  border: 2px solid var(--button-border-color-hover);
+}
+
+.product-card__button:active {
+  background-color: var(--button-bg-color-active);
+  color: var(--button-text-color-active);
+  border: 2px solid var(--button-border-color-active);
+}
+
+.product-card__button:disabled {
+  background-color: var(--button-bg-color-disabled);
+  color: var(--button-text-color-disabled);
+  border: 2px solid var(--button-border-color-disabled);
+}
+
+@media (max-width: 1179px) {
+  .products-cards-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 379px) {
+  .products-of-the-week__title {
+    font: normal 900 30px/60px 'Arial';
+  }
+
+  .products-of-the-week {
+    gap: 10px;
+  }
+
+  .product-card {
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+  }
+
+  .product-card__img {
+    width: 100%;
+  }
+
+  .product-card__title {
+    font: normal 900 20px/30px 'Arial';
+  }
+
+  .product-card__description {
+    font: normal 400 12px/18px "Arial";
+  }
+}
