@@ -33,11 +33,11 @@ body {
 .figure__image {
     height: auto;
     max-width: 100%;
-    margin: 8px 0 0;
 }
 
 .figure__caption {
     margin: 8px 0 0;
+
     font-style: italic;
     font-family: sans-serif;
     text-align: center;
